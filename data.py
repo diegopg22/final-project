@@ -1,5 +1,3 @@
-from multiprocessing.managers import view_type
-
 class City:
     def __init__(self, city_name, country, population, food_waste_per_capita):
         self.city_name = city_name
@@ -15,11 +13,12 @@ class City:
             self.food_waste_per_capita
         )
 cities = [
-    City('Rio de Janeiro', 'Brasil', 6700000, 94),
+    City('Rio de Janeiro', 'Brazil', 6700000, 94),
     City('San Miguel', 'Ecuador', 2470, 34),
     City('Punta Hermosa', 'Peru', 23470, 91),
     City('Belize City', 'Belize', 53000, 34),
     City('San Pedro', 'Belize',12000, 36),
-    City('Salcedo Municipality', 'Dominican Republic', )
+    City('Salcedo Municipality', 'Dominican Republic', 21335, 207),
+    City('Mexicali', 'Mexico', 1200000, 126)
 
 ]
