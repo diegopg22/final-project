@@ -40,3 +40,4 @@ def test_food_waste_lt_():
 #feedback test
 def test_feedback():
     feedback([city1, city2, city3])
+
