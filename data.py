@@ -1,6 +1,6 @@
-from multiprocessing.managers import view_type
 
-class city:
+
+class City:
     def __init__(self, city_name, country, population, food_waste_per_capita):
         self.city_name = city_name
         self.country = country
@@ -15,18 +15,14 @@ class city:
             self.food_waste_per_capita
         )
 cities = [
-    city('Rio de Janeiro', 'Brasil', 6700000, 94),
-    city('San Miguel', 'Ecuador', 2470, 34),
-    city('Punta Hermosa', 'Peru', 23470, 91),
-    city('Belize City', 'Belize', 53000, 34),
-    city('San Pedro', 'Belize',12000, 36),
-    city('Salcedo Municipality', 'Dominican Republic', )
-
+    City('Rio de Janeiro', 'Brasil', 6700000, 94),
+    City('San Miguel', 'Ecuador', 2470, 34),
+    City('Punta Hermosa', 'Peru', 23470, 91),
+    City('Belize City', 'Belize', 53000, 34),
+    City('San Pedro', 'Belize',12000, 36),
+    City('Caye Caulker', 'Belize', 1600, 45),
+    City('Salcedo Municipality', 'Dominican Republic', 35000, 207),
+    City('Santo Domingo', 'Dominican Republic', 4000000, 113),
+    City('Panama City', 'Panama', 1300000, 101),
+    City('Bogota', 'Columbia', 7400000,70)
 ]
-
-#finds the average waste per capita per for the city
-def average_waste(self):
-
-
-#returns all cities with food waste per capita above the average
-def food_waste_gt(self, average):
