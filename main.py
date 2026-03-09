@@ -40,13 +40,14 @@ def feedback(lst: list[data.City]) -> None:
               "\n{}, {} Food Waste Per Capita:".
               format(cities.city_name, cities.country), cities.food_waste_per_capita)
         if cities in lt_avg:
-            print("Well Done, {}! Keep up the good work in keeping food waste low.\n".
+            print("Well done, {}! Keep up the good work in keeping food waste low.\n".
                   format(cities.city_name))
         elif cities in gt_avg:
             print("Your food waste is above average, {}!\n"
                   "Some ways to reduce food waste are encourage residents and business to buy just as much as they need.\n"
                   "Additionally, setting up donation centers and composting can further encourage less food waste and promote a circular economy.\n".
                   format(cities.city_name))
+
 
 if __name__ == '__main__':
     feedback(data.cities)
