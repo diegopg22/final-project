@@ -37,8 +37,8 @@ def feedback(lst: list[data.City]) -> None:
     lt_avg = food_waste_lt(lst) #Cities that are lower than average and at the average
     for cities in lst:
         print("Average Food Waste Per Capita:",avg,
-              "\n{} Food Waste Per Capita:".
-              format(cities.city_name), cities.food_waste_per_capita)
+              "\n{}, {} Food Waste Per Capita:".
+              format(cities.city_name, cities.country), cities.food_waste_per_capita)
         if cities in lt_avg:
             print("Well Done, {}! Keep up the good work in keeping food waste low.\n".
                   format(cities.city_name))
